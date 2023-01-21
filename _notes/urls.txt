@@ -1,0 +1,10 @@
+https://api.github.com/search/repositories?q=language:php&order=desc&sort=stars&per_page=100&page=1
+https://api.github.com/search/repositories?q=language:php&order=desc&sort=stars&per_page=100&page=2
+https://api.github.com/search/repositories?q=language:php&order=desc&sort=stars&per_page=100&page=3
+https://api.github.com/search/repositories?q=language:php&order=desc&sort=stars&per_page=100&page=4
+https://api.github.com/search/repositories?q=language:php&order=desc&sort=stars&per_page=100&page=5
+https://api.github.com/search/repositories?q=language:php&order=desc&sort=stars&per_page=100&page=6
+https://api.github.com/search/repositories?q=language:php&order=desc&sort=stars&per_page=100&page=7
+https://api.github.com/search/repositories?q=language:php&order=desc&sort=stars&per_page=100&page=8
+https://api.github.com/search/repositories?q=language:php&order=desc&sort=stars&per_page=100&page=9
+https://api.github.com/search/repositories?q=language:php&order=desc&sort=stars&per_page=100&page=10
