@@ -10,9 +10,8 @@
 </head>
 <body>
     <div class="container">
-        <form action="">
-            <button>Update Repo List</button>
-        </form>
+        <h1>Popular PHP Repositories on GitHub</h1>
+        <a class="btn btn-blue" href="{{ route('update') }}">Update Repo List</a>
     </div>
 </body>
 </html>

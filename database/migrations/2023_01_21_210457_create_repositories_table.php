@@ -16,6 +16,14 @@ return new class extends Migration
         Schema::create('repositories', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->bigInteger('repo_id')->unique();
+            $table->string('name');
+            $table->string('owner');
+            $table->string('url');
+            $table->date('repo_create');
+            $table->date('last_push');
+            $table->longText('description');
+            $table->integer('stars');
         });
     }
 

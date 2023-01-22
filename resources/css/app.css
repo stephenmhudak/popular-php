@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-button {
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full;
-}
+body {@apply bg-gray-100;}
 
-.container {
-    @apply mx-auto;
-}
+h1, h2, h3, h4, h5, h6 {@apply font-bold my-2;}
+h1 {@apply text-4xl;}
+h2 {@apply text-3xl;}
+h3 {@apply text-2xl;}
+h4 {@apply text-xl;}
+h5 {@apply text-lg;}
+h6 {@apply text-base;}
+button {@apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;}
+
+.container {@apply mx-auto my-0 p-2 bg-gray-200;}
