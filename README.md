@@ -11,7 +11,7 @@
 ## Requirements
 - Webserver
 - MySQL
-- PHP 8.
+- PHP 8.2 or higher
 - Composer
 
 ## Installation instructions

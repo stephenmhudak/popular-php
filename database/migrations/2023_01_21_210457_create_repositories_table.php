@@ -20,9 +20,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('owner');
             $table->string('url');
-            $table->date('repo_create');
-            $table->date('last_push');
-            $table->longText('description');
+            $table->dateTime('repo_create');
+            $table->dateTime('last_push');
+            $table->longText('description')->nullable();
             $table->integer('stars');
         });
     }

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Models\Repository;
+
 use App\Http\Controllers\RepositoryController;
 
 /*
@@ -16,7 +18,8 @@ use App\Http\Controllers\RepositoryController;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $repositories = Repository::orderByDesc('stars')->limit(1000)->get();
+    return view('index')->with('repositories', $repositories);
 })->name('home');
 
 Route::get('/repos', [RepositoryController::class, 'updateRepos'])->name('update');
