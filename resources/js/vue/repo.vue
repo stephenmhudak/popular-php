@@ -1,7 +1,7 @@
 <template>
         <td>
             <p>
-                <a href="{{ repo.url }}" target="_blank">{{ repo.name }}</a>
+                <a v-bind:href="repo.url" target="_blank">{{ repo.name }}</a>
             </p>
             <p>ID: {{ repo.repo_id }}</p>
             <p>Owner: {{ repo.owner }}</p>

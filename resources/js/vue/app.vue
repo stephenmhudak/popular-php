@@ -39,6 +39,7 @@
                 axios.get('json')
                 .then( response => {
                     this.repos = response.data
+                    console.log(this.repos)
                 })
                 .catch(error => {
                     console.log(error)
