@@ -18,8 +18,12 @@ use App\Http\Controllers\RepositoryController;
 */
 
 Route::get('/', function () {
-    $repositories = Repository::orderByDesc('stars')->limit(1000)->get();
-    return view('index')->with('repositories', $repositories);
+    return view('index');
 })->name('home');
 
 Route::get('/repos', [RepositoryController::class, 'updateRepos'])->name('update');
+
+Route::get('/json', function () {
+    $repositories = Repository::orderByDesc('stars')->limit(1000)->get();
+    return Response::json($repositories);
+})->name('json');
