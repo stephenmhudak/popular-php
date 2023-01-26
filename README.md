@@ -25,5 +25,7 @@
 
 ## Using the app
 This app is a single page. Use the `Update Repo List` link to download the initial repository list or update the list later.
+
 Due to rate limiting imposed on the GitHub API, updating the repository list will fail if attempted more than 3 times in a minute.
+
 Click the repository's name to view it on GitHub.
