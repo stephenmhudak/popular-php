@@ -10,6 +10,7 @@
 ## Installation instructions
 1. Copy the files to a location readable by the webserver
 2. Make the `public` and `storage` folders readable and writeable by the webserver user
+    - Usually www-data:www-data for user and group and 775 for permissions depending on environment.
 3. Serve from the public directory
     - Enable `mod_rewrite`
     - Apache host directives:
