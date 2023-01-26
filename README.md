@@ -12,7 +12,7 @@
 2. Make the `public` and `storage` folders readable and writeable by the webserver user
 3. Serve from the public directory
     - Enable `mod_rewrite`
-    - Apache directives:
+    - Apache host directives:
         <Directory "/var/www/rcsf_app">
         allow from all
         Options Indexes FollowSymLinks
