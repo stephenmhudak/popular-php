@@ -12,15 +12,16 @@
 2. Make the `public` and `storage` folders readable and writeable by the webserver user
 3. Serve from the public directory
     - Enable `mod_rewrite`
-    - `<Directory "/var/www/rcsf_app">
-    allow from all
-    Options Indexes FollowSymLinks
-    AllowOverride All
-    Require all granted
-</Directory>
-RewriteEngine on
-RewriteCond %{SERVER_NAME} =app.rcscholarships.org
-RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]`
+    - Apache directives:
+        <Directory "/var/www/rcsf_app">
+        allow from all
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+        </Directory>
+        RewriteEngine on
+        RewriteCond %{SERVER_NAME} =app.rcscholarships.org
+        RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
 4. Generate a new personal access token on GitHub at `https://github.com/settings/tokens`
     - The token only needs the `public_repo` option selected
     - Expiration date should last as long as you intend to use the program without having to generate a new token
