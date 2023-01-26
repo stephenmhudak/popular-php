@@ -13,7 +13,7 @@
 3. Serve from the public directory
     - Enable `mod_rewrite`
     - Apache host directives:
-        <Directory "/var/www/rcsf_app">
+        ```<Directory "/var/www/rcsf_app">
         allow from all
         Options Indexes FollowSymLinks
         AllowOverride All
@@ -21,7 +21,7 @@
         </Directory>
         RewriteEngine on
         RewriteCond %{SERVER_NAME} =app.rcscholarships.org
-        RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
+        RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]```
 4. Generate a new personal access token on GitHub at `https://github.com/settings/tokens`
     - The token only needs the `public_repo` option selected
     - Expiration date should last as long as you intend to use the program without having to generate a new token
