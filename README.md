@@ -22,6 +22,7 @@
     - If the table `hudakgit` does not already exist, you will be prompted to create it - input `yes` and press enter
 7. From the popular-php folder in the command line, run `composer install`
 8. From the popular-php folder in the command line, run `npm install`
+9. From the popular-php folder in the command line, run `php artisan key:generate`
 
 ## Using the app
 This app is a single page. Use the `Update Repo List` link to download the initial repository list or update the list later.
