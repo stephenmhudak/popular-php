@@ -20,9 +20,6 @@
         AllowOverride All
         Require all granted
         </Directory>
-        RewriteEngine on
-        RewriteCond %{SERVER_NAME} =app.rcscholarships.org
-        RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
         ```
 4. Generate a new personal access token on GitHub at `https://github.com/settings/tokens`
     - The token only needs the `public_repo` option selected
