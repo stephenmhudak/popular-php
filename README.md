@@ -14,7 +14,7 @@
     - Enable `mod_rewrite`
     - Apache host directives:
         ```
-        <Directory "/var/www/rcsf_app">
+        <Directory "/path/here">
         allow from all
         Options Indexes FollowSymLinks
         AllowOverride All
